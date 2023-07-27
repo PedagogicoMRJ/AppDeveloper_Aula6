@@ -3,20 +3,20 @@ import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 
 export default function App() {
   return (
-    <ImageBackground style={styles.gradient} source={require("./assets/gradient.png")}>
-    <View style={styles.boxProfile}>
-      <Image source={require("./assets/profile.png")} style={styles.profileImg}/>
+    <ImageBackground source={require('./assets/gradient.png')} style={styles.gradient} >
+    <View style={styles.boxPerfil}>
+      <Image source={require('./assets/profile.png')} style={styles.profileImg}/>
       <Text style={styles.nameTxt}>Millena Rosa</Text>
       <Text style={styles.proTxt}>Professora</Text>
       <Text style={styles.text}> Like:</Text>
       <View style={styles.boxInterest}>
-        <Image source={require('./assets/devices.png')} style={styles.imgInterest}/>
-        <Image source={require('./assets/swiming.png')} style={styles.imgInterest}/>
-        <Image source={require('./assets/camera.png')} style={styles.imgInterest}/>
+        <Image source={require('./assets/cellphone.png')} style={styles.imgInterest}/>
+        <Image source={require('./assets/cats.png')} style={styles.imgInterest}/>
+        <Image source={require('./assets/pan.png')} style={styles.imgInterest}/>
       </View>
-      </View>
-      <StatusBar style="auto" />
-    </ImageBackground>
+    </View>
+    <StatusBar style="auto" />
+  </ImageBackground>
   );
 }
 
@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  boxProfile:{
-    backgroundColor: 'rgba(250,250,250,0.5)',
+  boxPerfil:{
+    backgroundColor: 'rgba(250,250,250,0.4)',
     borderRadius: 20,
     padding: 20,
     alignItems: 'center',
@@ -35,13 +35,13 @@ const styles = StyleSheet.create({
   profileImg:{
     width:120,
     height:120,
-    backgroundColor:'rgba(255,255,255, 0.2)',
+    backgroundColor:'rgba(255,255,255,.2)',
     borderRadius: 60,
     borderColor: 'rgb(0,0,0)',
     borderWidth: 0.3,
     margin:20,
   },
-  naTxt:{
+  nameTxt:{
     fontSize: 30,
     fontWeight: 'bold',
   },
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     fontSize:20,
     fontWeight:'300',
     marginTop: 25,
-    marginbottom:10,
+    marginBottom:10,
   },
   boxInterest:{
     flexDirection: 'row',
