@@ -1,18 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, Image, ImageBackground} from 'react-native';
 
 export default function App() {
   return (
-    <ImageBackground source={require('./assets/gradient.png')} style={styles.gradient} >
+    <ImageBackground source={require('./assets/gradient.png')} style={styles.gradient}>
     <View style={styles.boxPerfil}>
-      <Image source={require('./assets/profile.png')} style={styles.profileImg}/>
+      <Image source={require('./assets/profile.png')} style={styles.profileImg} />
       <Text style={styles.nameTxt}>Millena Rosa</Text>
       <Text style={styles.proTxt}>Professora</Text>
-      <Text style={styles.text}> Like:</Text>
+      <Text style={styles.text}>Like:</Text>
       <View style={styles.boxInterest}>
-        <Image source={require('./assets/cellphone.png')} style={styles.imgInterest}/>
-        <Image source={require('./assets/cats.png')} style={styles.imgInterest}/>
-        <Image source={require('./assets/pan.png')} style={styles.imgInterest}/>
+        <Image source={require('./assets/cellphone.png')} style={styles.imgInterest} />
+        <Image source={require('./assets/cats.png')} style={styles.imgInterest} />
+        <Image source={require('./assets/pan.png')} style={styles.imgInterest} />
       </View>
     </View>
     <StatusBar style="auto" />
@@ -67,5 +67,5 @@ const styles = StyleSheet.create({
     width: 50,
     height:50,
     marginVertical: 10,
-  },
+  }
 });
